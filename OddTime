@@ -18,10 +18,13 @@ public class OddTime {
 		for (int i = 0; i < arr.length; i++) {
 
 			if (map.containsKey(arr[i])) {
-
 				map.put(arr[i], map.get(arr[i]) + 1);
+				// if the element is already exist
+				// ->> just add up by 1 for its appearance
 			} else {
 				map.put(arr[i], 1);
+				// if it not appear yet, just mark it as 1 for visited
+
 			}
 		}
 
